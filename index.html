@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Галерея проектів Lego 51515</title>
+  <style>
+    :root { --thumb-width: 322px; --thumb-height: 279px; --gap: 20px; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      line-height: 1.4;
+      margin: 20px;
+      color: #111;
+      background: #e0e0e0;
+    }
+    h1 {
+      margin: 0 0 20px;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(var(--thumb-width), 1fr));
+      gap: var(--gap);
+      justify-content: center;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      border-radius: 10px;
+      padding: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    .thumb {
+      width: var(--thumb-width);
+      height: var(--thumb-height);
+      overflow: hidden;
+      border-radius: 8px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Галерея проектів Lego 51515</h1>
+  <div id="gallery" class="grid"></div>
+
+  <script>
+    // Список папок
+    const projects = [
+      '1_crane',
+      '2_mini_loader',
+      '3_cat',
+      '4_1-motor_walker',
+      '5_spider',
+      '6_4-motor_walker',
+      '7_slot_machine',
+      '8_6-Wheeler',
+      '9_Bowling',
+      '10_Whack-a-Mole',
+      '11_Snowmobile',
+      '12_Camera_Car',
+      '13_dial_programmable_bot',
+      '14_Claw_Bot',
+      '15_Motion_Platform',
+      '16_Drum_Rhythm_Game',
+      '17_Snake_Train',
+      '18_Balance_Bot',
+      '19_scout_walker',
+      '20_Quadcopter',
+      '21_Stand-up_Scooter',
+      '22_Pull_Press_Twist_Game',
+      '23_Morse_Code_Reader',
+      '24_Reaction_Wheel',
+      '25_Flying_Bird_Game',
+      '26_Karate_Chopper',
+      '27_Vending_Machine',
+      '28_Band_on_Stage',
+      '29_Wheelchair_Rider',
+      '30_Top_Spinner',
+      '31_Golf_Game',
+      '32_Mobile_Catapult',
+      '33_Light_Meter',
+      '34_Mini-Tractor_Race',
+      '35_Radar',
+      '36_Inchworm',
+      '37_1-Motor_Car',
+      '38_flipping_gymnast'
+    ];
+
+    function createCard(name) {
+      // Отримуємо число до знаку "_"
+      const num = name.split('_')[0];
+      const preview = `${num}.jpg`;
+
+      const link = document.createElement('a');
+      link.href = `./${name}/index.html`;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.className = 'card';
+
+      const thumb = document.createElement('div');
+      thumb.className = 'thumb';
+
+      const img = document.createElement('img');
+      img.src = `./${preview}`;
+      img.alt = name;
+      img.loading = 'lazy';
+      thumb.appendChild(img);
+
+      link.appendChild(thumb);
+      return link;
+    }
+
+    const gallery = document.getElementById('gallery');
+    projects.forEach(name => gallery.appendChild(createCard(name)));
+  </script>
+</body>
+</html>
