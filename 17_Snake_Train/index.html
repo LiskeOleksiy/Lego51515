@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="shortcut icon" href="OneKitProjects_Icon.ico">
+<title>Instructions 51515</title>
+
+  <style type="text/css">
+   TABLE {
+    width: 1000px; 
+    border-bottom: 2px solid maroon; 
+    background: #fffacd; 
+    margin: auto;
+   }
+   TH {
+    background: maroon; 
+    color: white; 
+    text-align: left;
+   }
+   TD, TH {
+    padding: 3px; 
+   }
+  </style>
+
+</head>
+
+<body>
+
+<a href="../index.html">Home</a>
+<table cellspacing="0">
+<tr>
+<th><h1>Snake Train</h1></th><th>&nbsp;</th>
+</tr>
+<tr>
+<td width="550">
+<img src="im.jpg">
+</td>
+
+<td>
+This robot slithers around like a snake, and it can also follow a line like a train following a track. My cats are normally unimpressed by my LEGO robots, but they found this one disturbing...
+
+
+
+<br>On carpet or any surface, you can drive the Snake Train by remote control, or try the autonomous program that wiggles around in a wavy oval pattern. On a smooth surface you can lay down a line with tape for it to follow using the line following program. See the program image descriptions for details.
+
+
+
+<br>I left the design of the engine and the cars plain and simple, so have fun adding to or modifying them!
+</td>
+</tr>
+<tr>
+<td width="550">
+<img src="im 2.jpg">
+</td>
+
+<td>
+Slither around through your carpet by remote control or autonomously
+</td>
+</tr>
+<tr>
+<td width="550">
+
+<img src="im 3.jpg">
+</td>
+
+<td>
+Set up a curved line for it to follow like a train track
+</td>
+</tr>
+
+</table>
+
+  <table cellspacing="0">
+   <tr>
+    <th>&nbsp;</th><th><h3>Building Instructions</h3></th>
+   </tr>
+   <tr>
+    <td width="60"><a href="1 Engine for Snake Train.pdf"><img src="pdf.jpg"></a></td><td><a href="1 Engine for Snake Train.pdf">1 Engine for Snake Train</a></td>
+   </tr>
+   <tr>
+    <td width="60"><a href="2 Cars for Snake Train.pdf"><img src="pdf.jpg"></a></td><td><a href="2 Cars for Snake Train.pdf">2 Cars for Snake Train</a></td>
+   </tr>
+   <tr>
+    <td width="60"><a href="3 Snake Train.pdf"><img src="pdf.jpg"></a></td><td><a href="3 Snake Train.pdf">3 Snake Train</a></td>
+   </tr>
+
+
+  </table>
+
+  <table cellspacing="0">
+   <tr>
+    <th>&nbsp;</th><th><h3>Programming</h3></th>
+   </tr>
+    <tr>
+    <td width="60"><a href="Snake Train Programming.zip"><img src="zip.jpg"></a></td><td><a href="Snake Train Programming.zip">Snake Train Programming.zip</a></td>
+   </tr>
+    <tr>
+    <td width="60"><a href="1 Snake Train RC.lms"><img src="lego.jpg"></a></td><td><a href="1 Snake Train RC.lms">1 Snake Train RC.lms</a></td>
+   </tr>
+    <tr>
+    <td width="60"><a href="2 Snake Train Oval.lms"><img src="lego.jpg"></a></td><td><a href="2 Snake Train Oval.lms">2 Snake Train Oval.lms</a></td>
+   </tr>
+    <tr>
+    <td width="60"><a href="3 Snake Train Follow.lms"><img src="lego.jpg"></a></td><td><a href="3 Snake Train Follow.lms">3 Snake Train Follow.lms</a></td>
+   </tr>
+
+ </table>
+
+<table cellspacing="0">
+<tr>
+<td width="250"><a href="prog 1.jpg"><img src="prog 1.jpg" height="150"  alt="Program 1"></a></td>
+
+<td>
+<b> Snake Train RC</b>
+<br>
+The Platform Gyro progam uses the hub's gyro sensor, so see note at the end of this page to make sure it is calibrated first.
+<br> This remote control program allows you to drive the Snake Train with a simple switch and slider. You can't back up, and it only goes full speed, so you need to keep steering!
+</td>
+</tr>
+
+<tr>
+<td width="250"><a href="prog 2.jpg"><img src="prog 2.jpg" height="150" alt="Program 2"></a></td>
+
+<td>
+<b> Snake Train Oval</b>
+<br>
+This autonomous program makes the Snake Train drive in a repeating curvy oval pattern.
+
+<br>You can also make your own autonomous programs using just movement blocks, but when you string multiple movement blocks together the robot stops after each one. This program keeps it constantly moving. Also, this program uses the gyro sensor to make the turning angles more accurate.
+</td>
+</tr>
+<tr>
+<td width="250"><a href="prog 3.jpg"><img src="prog 3.jpg" height="150" alt="Program 3"></a></td>
+
+<td>
+<b> Snake Train Follow</b>
+<br>
+This autonomous program makes the Snake Train follow a line on the ground using the color sensor (in reflected light mode). 
+
+<br>To make a line, use dark tape if your floor is light colored. Black electrical tape is best because it is flexible and you can make curves if you gently stretch it while laying it down. If your floor is dark colored, you can use white tape. Make your curves gradual, the train will not be able to follow tight turns.
+
+<br>Start the program with the light sensor centered directly over the line. The program will scan the line and the floor  to measure the light reflection of each and then start following the line.
+</td>
+</tr>
+
+  <table cellspacing="0">
+   <tr>
+    <th>&nbsp;</th><th><h3>Gyro Sensor Problem and Workaround</h3></th>
+   </tr>
+   <tr>
+    <td width="10"></td><td>
+The built-in gyro sensor in the LEGO MINDSTORMS Robot Inventor hub allows a program to sense the angular direction and motion of the hub (in all three axes: roll, pitch, and yaw). This can be used to make a robot sense changes in its tilt or turn angle, for example.
+
+
+
+<br>However, for the gyro sensor to work properly, it needs to complete an internal calibration each time you power up the hub, and this calibration requires that the hub be completely motionless for a few seconds. Until the calibration has a chance to complete, the gyro sensor will just report 0 angle no matter what direction it is facing.
+
+
+
+<br>So, if you are having trouble getting a program that uses the gyro sensor to work, especially if it doesn't seem to respond at all, or if the model behaves erratically and totally different from the intended design, set the model down on a table or floor and let go, so that the hub is totally motionless for a few seconds. This should allow the gyro to complete its calibration and start working.
+
+
+
+
+</td>
+   </tr>
+
+  </table>
+
+
+</table>
+</body>
+</html>

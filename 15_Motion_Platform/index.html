@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="shortcut icon" href="OneKitProjects_Icon.ico">
+<title>Instructions 51515</title>
+
+  <style type="text/css">
+   TABLE {
+    width: 1000px; 
+    border-bottom: 2px solid maroon; 
+    background: #fffacd; 
+    margin: auto;
+   }
+   TH {
+    background: maroon; 
+    color: white; 
+    text-align: left;
+   }
+   TD, TH {
+    padding: 3px; 
+   }
+  </style>
+
+</head>
+
+<body>
+
+<a href="../index.html">Home</a>
+
+<table cellspacing="0">
+<tr>
+<th><h1>Motion Platform</h1></th><th>&nbsp;</th>
+</tr>
+<tr>
+<td width="550">
+<img src="im.jpg">
+</td>
+
+<td>
+This motion platform has three motors arranged in a triangular shape to control the tilt and movement of the platform. You can hold the hub in your hand and tilt it to control the tilt of the platform using the hub's gyro sensor.
+
+
+
+<br>The motion frame is triangular, but you can add the optional oval platform on top to make it easy to add more items, such as the Ball Challenge, where you control the roll of a ball on the platform. 
+
+
+
+<br>With three motors, this platform technically has three "degrees of freedom", which means that you can control three different kinds of motion. With the gyro input, you can control the pitch and roll angles of the platform, which leaves one more degree of freedom. This turns out to be the overall height (z) of the platform, which the program also lets you adjust using the hub's left and right arrow buttons.
+
+
+
+<br>With more motors, such as the six motors or actuators in a Stewart Platform, you could control all six degrees of freedom of a moving object (roll, pitch, yaw, x, y, z), so this is like a simplified version of that.
+</td>
+</tr>
+<tr>
+<td width="550">
+<img src="im 2.jpg">
+</td>
+
+<td>
+Hold and tilt the hub to control the tilt of the platform.
+</td>
+</tr>
+<tr>
+<td width="550">
+<img src="im 3.jpg">
+</td>
+
+<td>
+The platform copies the pitch and roll angles of the hub, and you can also adjust the overall height of the platform with the hub's arrow buttons.
+</td>
+</tr>
+<tr>
+<td width="550">
+<img src="im 4.jpg">
+</td>
+
+<td>
+Try adding this Ball Challenge to the platform. Can you move the ball between the two sides without dropping it?
+</td>
+</tr>
+
+</table>
+
+  <table cellspacing="0">
+   <tr>
+    <th>&nbsp;</th><th><h3>Building Instructions</h3></th>
+   </tr>
+   <tr>
+    <td width="60"><a href="1 Motion Frame.pdf"><img src="pdf.jpg"></a></td><td><a href="1 Motion Frame.pdf">1 Motion Frame</a></td>
+   </tr>
+   <tr>
+    <td width="60"><a href="2 Oval Platform for Motion Platform.pdf"><img src="pdf.jpg"></a></td><td><a href="2 Oval Platform for Motion Platform.pdf">2 Oval Platform for Motion Platform</a></td>
+   </tr>
+   <tr>
+    <td width="60"><a href="3 Ball Challenge for Motion Platform.pdf"><img src="pdf.jpg"></a></td><td><a href="3 Ball Challenge for Motion Platform.pdf">3 Ball Challenge for Motion Platform</a></td>
+   </tr>
+
+  </table>
+
+  <table cellspacing="0">
+   <tr>
+    <th>&nbsp;</th><th><h3>Programming</h3></th>
+   </tr>
+    <tr>
+    <td width="60"><a href="Motion Platform Programming.zip"><img src="zip.jpg"></a></td><td><a href="Motion Platform Programming.zip">Motion Platform Programming.zip</a></td>
+   </tr>
+    <tr>
+    <td width="60"><a href="1 Platform RC Buttons.lms"><img src="lego.jpg"></a></td><td><a href="1 Platform RC Buttons.lms">1 Platform RC Buttons.lms</a></td>
+   </tr>
+    <tr>
+    <td width="60"><a href="2 Platform Gyro.lms"><img src="lego.jpg"></a></td><td><a href="2 Platform Gyro.lms">2 Platform Gyro.lms</a></td>
+   </tr>
+
+ </table>
+
+<table cellspacing="0">
+<tr>
+<td width="250"><a href="prog 1.jpg"><img src="prog 1.jpg" height="150"  alt="Program 1"></a></td>
+
+<td>
+<b>Platform RC Buttons</b>
+<br>
+The Platform Gyro progam uses the hub's gyro sensor, so see note at the end of this page to make sure it is calibrated first.
+<br>This program controls the platform motors in a simple way via remote control from a smart device, without the math required in the gyro program. 
+
+<br>Using the buttons on the remote control, you can simply choose high, middle, or low positions for each of the 3 motors. Can you figure out what combinations make it tilt in all 4 compass directions?
+</td>
+</tr>
+
+<tr>
+<td width="250"><a href="prog 2.jpg"><img src="prog 2.jpg" height="150" alt="Program 2"></a></td>
+
+<td>
+<b>Platform Gyro</b>
+<br>
+This program controls the tilt (roll and pitch) of the platform, to make it copy (approximately) the tilt angles of the hub's gyro sensor. You can hold the hub in your hand and move it around. 
+
+<br>You can also adjust the overall height of the platform (when it's not tilted too much) by pressing and holding the left and right arrow buttons on the hub.
+</td>
+</tr>
+
+  <table cellspacing="0">
+   <tr>
+    <th>&nbsp;</th><th><h3>Gyro Sensor Problem and Workaround</h3></th>
+   </tr>
+   <tr>
+    <td width="10"></td><td>
+The built-in gyro sensor in the LEGO MINDSTORMS Robot Inventor hub allows a program to sense the angular direction and motion of the hub (in all three axes: roll, pitch, and yaw). This can be used to make a robot sense changes in its tilt or turn angle, for example.
+
+
+
+<br>However, for the gyro sensor to work properly, it needs to complete an internal calibration each time you power up the hub, and this calibration requires that the hub be completely motionless for a few seconds. Until the calibration has a chance to complete, the gyro sensor will just report 0 angle no matter what direction it is facing.
+
+
+
+<br>So, if you are having trouble getting a program that uses the gyro sensor to work, especially if it doesn't seem to respond at all, or if the model behaves erratically and totally different from the intended design, set the model down on a table or floor and let go, so that the hub is totally motionless for a few seconds. This should allow the gyro to complete its calibration and start working.
+
+
+
+
+</td>
+   </tr>
+
+  </table>
+
+
+</table>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="shortcut icon" href="OneKitProjects_Icon.ico">
+<title>Instructions 51515</title>
+
+  <style type="text/css">
+   TABLE {
+    width: 1000px; 
+    border-bottom: 2px solid maroon; 
+    background: #fffacd; 
+    margin: auto;
+   }
+   TH {
+    background: maroon; 
+    color: white; 
+    text-align: left;
+   }
+   TD, TH {
+    padding: 3px; 
+   }
+  </style>
+
+</head>
+
+<body>
+
+<a href="../index.html">Home</a>
+
+<table cellspacing="0">
+<tr>
+<th><h1>Claw Bot</h1></th><th>&nbsp;</th>
+</tr>
+<tr>
+<td width="550">
+<img src="im.jpg">
+</td>
+
+<td>
+This robot car has a claw that can pick up the large red ball from the ground, carry it, and drop it off somewhere else. The distance sensor and the color sensors can both be used to help the robot find target locations.
+
+
+
+<br>You can run the robot on either carpet or hard floors. On hard floors, a small stand can be used to keep the ball still before you pick it up. Two goals can be used as target locations to drop off the ball (or pick it back up again).
+
+
+
+<br>Two example autonomous programs are provided to show basic driving and turning operations and the use of the distance and color sensors to locate ball positions. There is also a remote control program that lets you freely drive the robot and operate the claw.
+</td>
+</tr>
+<tr>
+<td width="550">
+<img src="im 2.jpg">
+</td>
+
+<td>
+The claw can pick up the red ball from the ground, carry it, and put it back down again.
+</td>
+</tr>
+<tr>
+<td width="550">
+<img src="im 3.jpg">
+</td>
+
+<td>
+The distance sensor can be used to locate one of the goals.
+</td>
+</tr>
+<tr>
+<td width="550">
+<img src="im 4.jpg">
+</td>
+
+<td>
+Drop off the ball into a goal.
+</td>
+</tr>
+<tr>
+<td width="550">
+<img src="im 5.jpg">
+</td>
+
+<td>
+The color sensor can be used to find a tape line that marks the location of a ball in the stand.
+</td>
+</tr>
+<tr>
+<td width="550">
+<img src="im 6.jpg">
+</td>
+
+<td>
+The color sensor under the bot can trigger when it is over the target color.
+</td>
+</tr>
+
+</table>
+
+  <table cellspacing="0">
+   <tr>
+    <th>&nbsp;</th><th><h3>Building Instructions</h3></th>
+   </tr>
+   <tr>
+    <td width="60"><a href="1 Claw Bot.pdf"><img src="pdf.jpg"></a></td><td><a href="1 Claw Bot.pdf">1 Claw Bot</a></td>
+   </tr>
+   <tr>
+    <td width="60"><a href="2 Ball Stand and Goals for Claw Bot.pdf"><img src="pdf.jpg"></a></td><td><a href="2 Ball Stand and Goals for Claw Bot.pdf">2 Ball Stand and Goals for Claw Bot</a></td>
+   </tr>
+
+  </table>
+
+  <table cellspacing="0">
+   <tr>
+    <th>&nbsp;</th><th><h3>Programming</h3></th>
+   </tr>
+    <tr>
+    <td width="60"><a href="Claw Bot Programming.zip"><img src="zip.jpg"></a></td><td><a href="Claw Bot Programming.zip">Claw Bot Programming.zip</a></td>
+   </tr>
+    <tr>
+    <td width="60"><a href="1 Claw Bot 30.lms"><img src="lego.jpg"></a></td><td><a href="1 Claw Bot 30.lms">1 Claw Bot 30.lms</a></td>
+   </tr>
+    <tr>
+    <td width="60"><a href="2 Claw Bot Color.lms"><img src="lego.jpg"></a></td><td><a href="2 Claw Bot Color.lms">2 Claw Bot Color.lms</a></td>
+   </tr>
+
+ </table>
+
+<table cellspacing="0">
+<tr>
+<td width="250"><a href="prog 1.jpg"><img src="prog 1.jpg" height="150"  alt="Program 1"></a></td>
+
+<td>
+<b>Claw Bot 30</b>
+<br>
+This autonomous program uses measured movement to find the ball ahead of it and then the distance sensor to find the goal behind it to drop off the ball. See the setup in the next image.
+</td>
+</tr>
+
+<tr>
+<td width="250"><a href="prog 2.jpg"><img src="prog 2.jpg" height="150" alt="Program 2"></a></td>
+
+<td>
+<b>Claw Bot 30 Setup</b>
+<br>
+This is how you should arrange the items for the Claw Bot 30 program. The robot will move forward exactly 30 cm to find the ball, so you should measure that distance.
+
+<br>The goal should be placed directly behind the robot as shown. The distance to the robot doesn't matter because the distance sensor will be used to find it.
+</td>
+</tr>
+<tr>
+<td width="250"><a href="prog 3.jpg"><img src="prog 3.jpg" height="150" alt="Program 3"></a></td>
+
+<td>
+<b>Claw Bot Color</b>
+<br>
+This autonomous program uses the color sensor to find a blue line that marks the location of the ball directly ahead of it and then the distance sensor to find the goal behind it to drop off the ball. See the setup in the next image.
+</td>
+</tr>
+<tr>
+<td width="250"><a href="prog 4.jpg"><img src="prog 4.jpg" height="150" alt="Program 4"></a></td>
+
+<td>
+<b>Claw Bot Color Setup</b>
+<br>
+This is how you should arrange the items for the Claw Bot Color program.
+
+<br>Make the blue line using blue painter's tape (or something else blue), with the beginning of the line about 8 cm from the center of the ball. The line and ball should be directly in front of the robot, but the distance doesn't matter because the robot will drive until it finds the line.
+
+<br>The goal should be placed directly behind the robot as shown. The distance to the robot doesn't matter because the distance sensor will be used to find it.
+</td>
+</tr>
+<tr>
+<td width="250"><a href="prog 5.jpg"><img src="prog 5.jpg" height="150" alt="Program 5"></a></td>
+
+<td>
+<b>Claw Bot RC</b>
+<br>
+This remote control program allows you to drive the robot with two sliders and control the claw with two buttons.
+
+<br>You can control the driving speed and steering with the two sliders, and you can also make the robot pivot back and forth in place using only the horizontal slider.
+
+<br>Press the red button to close the claw and the white button to open it.
+</td>
+</tr>
+
+</table>
+</body>
+</html>

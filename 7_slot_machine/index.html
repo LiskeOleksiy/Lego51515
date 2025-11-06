@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="shortcut icon" href="OneKitProjects_Icon.ico">
+<title>Instructions 51515</title>
+
+  <style type="text/css">
+   TABLE {
+    width: 1000px; 
+    border-bottom: 2px solid maroon; 
+    background: #fffacd; 
+    margin: auto;
+   }
+   TH {
+    background: maroon; 
+    color: white; 
+    text-align: left;
+   }
+   TD, TH {
+    padding: 3px; 
+   }
+  </style>
+
+</head>
+
+<body>
+
+<a href="../index.html">Home</a>
+
+<table cellspacing="0">
+<tr>
+<th><h1>Slot Machine</h1></th><th>&nbsp;</th>
+</tr>
+
+<tr>
+<td width="550">
+<img src="im.jpg" width="545">
+</td>
+<td>
+This slot machine model has 3 wheels, each with 4 different positions. Each wheel has a white "7", a colored "fruit" (cherry, lemon, or grapes), and two black blanks. Try your luck by pulling the lever to spin the wheels and see if you can get a winning combination.
+<br><br>You start with 15 credits, each spin costs 5 credits, and various combinations pay back different amounts (see the payback chart below). This program displays the number of credits you have left before each spin, then shows a green light and waits for you to pull the lever to spin the wheels. After the wheels stop, your payback is computed and animated as a series of "coin" pixels on the display. Your new credit count is displayed and then the game repeats.
+<br><br>If you run out of money and don't have at least 5 credits for another spin, a red light is shown and the lever is locked. Press the left arrow button on the hub to reset to 15 credits and play again.
+<br><br>Like a real slot machine, the odds are worked out so that you will lose money overall on average... See the payback spreadsheet image to see how the average payback works out to 94%.
+<br><br>But... one of the two programs has a hidden cheat where you can force a "Triple 7" jackpot if you do the right action at the right time! You will have to study the programming code to find out what it is...
+</td>
+</tr>
+
+<tr>
+<td width="550">
+<img src="im 2.jpg" width="545">
+</td>
+<td>
+The three wheels each have a white "7", a colored "fruit", and two black blanks.
+</td>
+</tr>
+
+<tr>
+<td width="550">
+<img src="im 3.jpg" width="545">
+</td>
+<td>
+A triple 7 gets the biggest payoff.
+</td>
+</tr>
+</table>
+
+  <table cellspacing="0">
+   <tr>
+    <th>&nbsp;</th><th><h3>Building Instructions</h3></th>
+   </tr>
+   <tr>
+    <td width="60"><a href="1 Slot Machine.pdf"><img src="pdf.jpg"></a></td><td><a href="1 Slot Machine.pdf">1 Slot Machine</a></td>
+   </tr>
+   <tr>
+    <td width="60"><a href="2 Slot Machine Paybacks.pdf"><img src="pdf.jpg"></a></td><td><a href="2 Slot Machine Paybacks.pdf">2 Slot Machine Paybacks</a></td>
+   </tr>
+
+  </table>
+
+  <table cellspacing="0">
+   <tr>
+    <th>&nbsp;</th><th><h3>Programming</h3></th>
+   </tr>
+    <tr>
+    <td width="60"><a href="Slot Machine Programming.zip"><img src="zip.jpg"></a></td><td><a href="Slot Machine Programming.zip">Slot Machine Programming.zip</a></td>
+   </tr>
+    <tr>
+    <td width="60"><a href="1 Slot Machine.lms"><img src="lego.jpg"></a></td><td><a href="1 Slot Machine.lms">1 Slot Machine.lms</a></td>
+   </tr>
+    <tr>
+    <td width="60"><a href="2 Slot Machine Cheat.lms"><img src="lego.jpg"></a></td><td><a href="2 Slot Machine Cheat.lms">2 Slot Machine Cheat.lms</a></td>
+   </tr>
+
+ </table>
+
+<table cellspacing="0">
+<tr>
+<td width="250"><a href="prog 1.jpg"><img src="prog 1.jpg" height="150"  alt="Program 1"></a></td>
+
+<td>
+<b>Slot Machine (1 of 2)</b>
+<br>
+The first half of the program controls the overall game logic, sensing the pull lever, and spinning and stopping the wheels.
+</td>
+</tr>
+
+<tr>
+<td width="250"><a href="prog 2.jpg"><img src="prog 2.jpg" height="150" alt="Program 2"></a></td>
+
+<td>
+<b>Slot Machine (2 of 2)</b>
+<br>
+The second half of the program computes the payback for the different wheel positions and animates the coins of the payback on the display.
+</td>
+</tr>
+<tr>
+<td width="250"><a href="prog 3.jpg"><img src="prog 3.jpg" height="150" alt="Program 3"></a></td>
+
+<td>
+<b>Slot Machine Cheat</b>
+<br>
+This alternate version of the program adds the cheat action to force a Triple 7. Can you figure out the cheat by looking at the code and then get it to work?
+<br>The first page of code shown here differs from the normal Slot Machine program by only one block, then the second page (not shown here, use the programming software to look at it) contains some more code that tests for the details of the cheat.
+</td>
+</tr>
+<tr>
+<td width="250"><a href="prog 4.jpg"><img src="prog 4.jpg" height="150" alt="Program 4"></a></td>
+
+<td>
+<b>Payback Chart</b>
+<br>
+This chart shows the payback value of different wheel combinations. For example [7, Yellow, 7] would pay 10 for a double 7 plus 3 for a lemon, for a total of 13.
+</td>
+</tr>
+<tr>
+<td width="250"><a href="prog 5.jpg"><img src="prog 5.jpg" height="150" alt="Program 5"></a></td>
+
+<td>
+<b>Payback Statistics</b>
+<br>
+This spreadsheet shows how the average payback is about 94% (losing 6% of your money over time), by listing all possible wheel combinations and their paybacks then calculating the average.
+</td>
+</tr>
+
+</table>
+</body>
+</html>

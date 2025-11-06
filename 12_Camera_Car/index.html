@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="shortcut icon" href="OneKitProjects_Icon.ico">
+<title>Instructions 51515</title>
+
+  <style type="text/css">
+   TABLE {
+    width: 1000px; 
+    border-bottom: 2px solid maroon; 
+    background: #fffacd; 
+    margin: auto;
+   }
+   TH {
+    background: maroon; 
+    color: white; 
+    text-align: left;
+   }
+   TD, TH {
+    padding: 3px; 
+   }
+  </style>
+
+</head>
+
+<body>
+
+<a href="../index.html">Home</a>
+
+<table cellspacing="0">
+<tr>
+<th><h1>Camera Car</h1></th><th>&nbsp;</th>
+</tr>
+
+<tr>
+<td width="550">
+<img src="im.jpg" width="545">
+</td>
+<td>
+This project makes a phone holder that attaches to the top of a robot such as the Classic Bot (and works for many other robot designs too), so that the phone's camera can be used for either image recognition using the Machine Learning feature of the programming software, or to take point-of-view videos while the robot is driving. See this video for example ideas.
+<br><br>Using the Machine Learning extension in the MINDSTORMS programming software (added to version 10.4 released August 1, 2022), the program example provided here makes the robot recognize three simple driving commands (Go, Stop, and Turn) signalled from a sign that you can dangle in front of the robot while it is driving. See the notes at the bottom of this page for instructions and tips on getting this to work and making your own image models.
+<br><br>You can also use the phone to take point-of-view videos of the robot car while it drives around, which is an interesting perspective on the world. Two programs provided here let you do that by remote control (from a second phone or smart device) or autonomously using the distance sensor.
+</td>
+</tr>
+
+<tr>
+<td width="550">
+<img src="im 2.jpg" width="545">
+</td>
+<td>
+Use Machine Learning to allow the robot car to recognize driving directions by image recognition.
+</td>
+</tr>
+
+<tr>
+<td width="550">
+<img src="im 3.jpg" width="545">
+</td>
+<td>
+The phone holder attachment mounts on top of the hub and can hold phones of different sizes either vertically or horizontally.
+</td>
+</tr>
+
+<tr>
+<td width="550">
+<img src="im 4.jpg" width="545">
+</td>
+<td>
+You can also use the phone to take point-of-view videos of your robot driving around.
+</td>
+</tr>
+</table>
+
+  <table cellspacing="0">
+   <tr>
+    <th>&nbsp;</th><th><h3>Building Instructions</h3></th>
+   </tr>
+   <tr>
+    <td width="60"><a href="1 Classic Bot.pdf"><img src="pdf.jpg"></a></td><td><a href="1 Classic Bot.pdf">1 Classic Bot</a></td>
+   </tr>
+   <tr>
+    <td width="60"><a href="2 Phone Holder for Camera Car.pdf"><img src="pdf.jpg"></a></td><td><a href="2 Phone Holder for Camera Car.pdf">2 Phone Holder for Camera Car</a></td>
+   </tr>
+   <tr>
+    <td width="60"><a href="3 Hanging Sign for Camera Car.pdf"><img src="pdf.jpg"></a></td><td><a href="3 Hanging Sign for Camera Car.pdf">3 Hanging Sign for Camera Car</a></td>
+   </tr>
+   <tr>
+    <td width="60"><a href="4 Distance Sensor for Camera Car.pdf"><img src="pdf.jpg"></a></td><td><a href="4 Distance Sensor for Camera Car.pdf">4 Distance Sensor for Camera Car</a></td>
+   </tr>
+
+  </table>
+
+  <table cellspacing="0">
+   <tr>
+    <th>&nbsp;</th><th><h3>Programming</h3></th>
+   </tr>
+    <tr>
+    <td width="60"><a href="Camera Car Programming.zip"><img src="zip.jpg"></a></td><td><a href="Camera Car Programming.zip">Camera Car Programming.zip</a></td>
+   </tr>
+    <tr>
+    <td width="60"><a href="1 Camera Car ML.lms"><img src="lego.jpg"></a></td><td><a href="1 Camera Car ML.lms">1 Camera Car ML.lms</a></td>
+   </tr>
+    <tr>
+    <td width="60"><a href="2 Camera Car RC.lms"><img src="lego.jpg"></a></td><td><a href="2 Camera Car RC.lms">2 Camera Car RC.lms</a></td>
+   </tr>
+    <tr>
+    <td width="60"><a href="3 Camera Car Auto.lms"><img src="lego.jpg"></a></td><td><a href="3 Camera Car Auto.lms">3 Camera Car Auto.lms</a></td>
+   </tr>
+
+ </table>
+
+<table cellspacing="0">
+<tr>
+<td width="250"><a href="prog 1.jpg"><img src="prog 1.jpg" height="150"  alt="Program 1"></a></td>
+
+<td>
+<b>Camera Car ML</b>
+<br>
+This program using the Machine Learning extension to define four different images classes (for three driving commands plus "None") then uses them to trigger simple driving actions. See the notes on the project page for instructions.
+</td>
+</tr>
+
+<tr>
+<td width="250"><a href="prog 2.jpg"><img src="prog 2.jpg" height="150" alt="Program 2"></a></td>
+
+<td>
+<b>Camera Car RC</b>
+<br>
+This program controls the Camera Car by normal remote control. If you have two smart devices you can use, you can mount a phone on the car to take point-of-view videos while driving the car from the other device.
+</td>
+</tr>
+<tr>
+<td width="250"><a href="prog 3.jpg"><img src="prog 3.jpg" height="150" alt="Program 3"></a></td>
+
+<td>
+<b>Camera Car Auto</b>
+<br>
+This autonomous program makes the robot drive around the room, turning whenever the distance sensor sees an obstacle (use the Distance Sensor attachment). You can use this to take a point-of-view video with only one phone.
+</td>
+</tr>
+
+
+
+
+
+
+
+
+  <table cellspacing="0">
+   <tr>
+    <th>&nbsp;</th><th><h3>Using Machine Learning</h3></th>
+   </tr>
+   <tr>
+    <td width="10"></td><td>
+Here are some instructions for using the Camera Car ML program, and using the Machine Learning feature to customize the image recognitition for your environment and experiment with your own models. Due to the way this kind of image recognition works, you will need to "re-train" the model to get it to work well for you. See this video for an example of the model in action.
+
+
+
+<br><br>Doing image recognition from a moving vehicle is tricky because the background of the image is always changing, and the image recognition takes the entire image into account. The software recognizer (a neural network) does not know what it is supposed to be looking at, so it processes the entire image, including the walls and furniture in the background. All aspects of the image are considered, including colors, shapes, patterns, etc. (Image recognition on a model where the phone doesn't move is a lot easier if you want to try that idea somewhere).
+
+
+
+<br><br>1. Load the Camera Car ML program on your phone, then tap on the Machine Learning icon on the right (below the Remote Control and Monitor icons).
+
+
+
+<br><br>2. Tap the icon on the camera preview image to grant camera access to the software, and then make sure the back camera of the phone is selected (looking away from you, not at you).
+
+
+
+<br><br>3. Tap the Library button, then select the Driving Directions model, then tap Edit.
+
+
+
+<br><br>4. You will see four "classes" named Go, Stop, Turn, and None. You can tap each to see a set of training images that I took for these actions. The Go and Stop classes have 8-10 images of the front and back of the hanging sign, held fairly close to the camera so that it fills most of the frame. This makes these reliable to recognise since they block out most of the background. You can try using these two classes as-is, but they will work better if you delete my images and retake your own in the room where you plan to use the robot. 
+
+
+
+<br><br>5. The None class has 30 background images of the room where I was using the robot, all taken at different angles (since the robot can move around). Since the image recognizer is always trying to recognize something and will just take the closest match when unsure, this class is necessary to keep it from wildly guessing when there is no sign in front of it. Unless your room looks a lot like mine, (very unlikely), you will need to delete my images and take your own and re-train the model. The phone doesn't have to be on the robot, but try to use the perspective that the camera will have on the robot, and take 30 or more images, turning slightly with each one, to get the room from as many angles as possible, the more images the better. Real autonomous driving software (e.g. Tesla Autopilot) uses millions of images taken from many thousands of cars on as many roads as possible to try to recognize things like stop signs.
+
+
+
+<br><br>6. The Turn class has images of the side edge of the hanging sign. Since this makes the image contain mostly background, it is hard for the software to distinguish this from the background (None) images, so I took more pictures than Go and Stop here. Also in the program code you will see that I required the confidence to be much higher than default (> 95%) to distinguish Turn vs. None.
+
+
+
+<br><br>7. After taking all of your images, press the Train button to re-train the model, then you can press Done and then the Run button to run the program and give it a try. Be prepared for a few tries at this and to experiment a bit to see what works better for you.
+
+
+</td>
+   </tr>
+
+  </table>
+
+
+
+
+
+
+
+
+
+</table>
+</body>
+</html>

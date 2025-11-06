@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="shortcut icon" href="OneKitProjects_Icon.ico">
+<title>Instructions 51515</title>
+
+  <style type="text/css">
+   TABLE {
+    width: 1000px; 
+    border-bottom: 2px solid maroon; 
+    background: #fffacd; 
+    margin: auto;
+   }
+   TH {
+    background: maroon; 
+    color: white; 
+    text-align: left;
+   }
+   TD, TH {
+    padding: 3px; 
+   }
+  </style>
+
+</head>
+
+<body>
+
+<a href="../index.html">Home</a>
+
+<table cellspacing="0">
+<tr>
+<th><h1>Quadcopter</h1></th><th>&nbsp;</th>
+</tr>
+<tr>
+<td width="550">
+<img src="im.jpg">
+</td>
+
+<td>
+Does it fly? Sorry, no, not even close. It doesn't even generate any measurable thrust... So you will have to use your imagination for that part. But the two programs provided control the four rotors independently and show two basic strategies that real quadcopters use: translating remote control inputs to rotor speeds to control thrust and steering, and automatic self-levelling flight using a gyro sensor.
+
+
+
+<br>Although you can't see any thrust effects, you can notice slight twisting motions when running the quadcopter balanced on the stand. This is due to the reaction effects of the changing rotor speeds, which is something that real quadcopters need to deal with (or can use to their advantage in some cases). For a project that explores this effect in a very noticable way, see the Reaction Wheel.
+</td>
+</tr>
+</table>
+
+  <table cellspacing="0">
+   <tr>
+    <th>&nbsp;</th><th><h3>Building Instructions</h3></th>
+   </tr>
+   <tr>
+    <td width="60"><a href="Quadcopter.pdf"><img src="pdf.jpg"></a></td><td><a href="Quadcopter.pdf">Quadcopter</a></td>
+   </tr>
+
+  </table>
+
+  <table cellspacing="0">
+   <tr>
+    <th>&nbsp;</th><th><h3>Programming</h3></th>
+   </tr>
+    <tr>
+    <td width="60"><a href="Quadcopter Programming.zip"><img src="zip.jpg"></a></td><td><a href="Quadcopter Programming.zip">Quadcopter Programming.zip</a></td>
+   </tr>
+    <tr>
+    <td width="60"><a href="1 Quadcopter RC.lms"><img src="lego.jpg"></a></td><td><a href="1 Quadcopter RC.lms">1 Quadcopter RC.lms</a></td>
+   </tr>
+    <tr>
+    <td width="60"><a href="2 Quadcopter Gyro.lms"><img src="lego.jpg"></a></td><td><a href="2 Quadcopter Gyro.lms">2 Quadcopter Gyro.lms</a></td>
+   </tr>
+
+ </table>
+
+<table cellspacing="0">
+<tr>
+<td width="250"><a href="prog 1.jpg"><img src="prog 1.jpg" height="150"  alt="Program 1"></a></td>
+
+<td>
+<b>Quadcopter RC</b>
+<br>
+This remote control program uses the slider to control the overall vertical thrust power and then adds input from the joystick to modify the four motor speeds to simulate the tilting necessary to move horizontally.
+
+<br>You can balance the quadcopter on the stand when running this program.
+</td>
+</tr>
+
+<tr>
+<td width="250"><a href="prog 2.jpg"><img src="prog 2.jpg" height="150" alt="Program 2"></a></td>
+
+<td>
+<b>Quadcopter Gyro</b>
+<br>
+This program uses the hub's gyro sensor to modify the four motor speeds to simulate corrections needed to keep the quadcopter flying level. All four rotors run at about 50% speed when the quadcopter is level, and a pair of opposing motors is sped up on one side and slowed down on the other when the hub is tilted along that axis.
+
+<br>You can (carefully) hold the quadcopter in your hand from below when running this program so you can tilt it.
+</td>
+</tr>
+
+</table>
+</body>
+</html>
